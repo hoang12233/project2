@@ -1,0 +1,559 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+:root {
+    --primary-color: #e50914;
+    --dark-color: #141414;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('background.jpg');
+    background-repeat: round;
+    position: relative;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nextflix {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    height: 90px;
+}
+
+.nextflix img {
+    width: 170px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background-color: var(--primary-color);
+    padding: 5px 15px;
+    font-size: 22px;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.content {
+    position: absolute;
+    color: #fff;
+    z-index: 1;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 90px;
+    font-weight: 700;
+}
+
+.content p {
+    font-size: 35px;
+    margin-top: 30px;
+    font-weight: 500;
+}
+
+.watch {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+    text-align: center;
+}
+
+.watch a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 60px;
+    background: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.watch a:hover {
+    opacity: 0.8;
+}
+
+/* info */
+
+.info {
+    width: 100%;
+    background: var(--dark-color);
+    padding-top: 20px;
+    border-bottom: 3px solid #3d3d3d;
+}
+
+.info-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 70%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+}
+
+.list {
+    color: #999999;
+    padding: 20px 0;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.list-border {
+    border-bottom: 4px solid red;
+}
+
+.list:hover {
+    color: #fff;
+}
+
+.list p {
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+.tab-content {
+    width: 100%;
+    background: #000;
+    color: #fff;
+}
+
+/* .container {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    align-items: center;
+    max-width: 70%;
+    margin: auto;
+    overflow: hidden;
+} */
+
+.tab-content1 {
+    display : none;
+}
+
+.tab-content1-wrap {
+    display : flex;
+    justify-content: center;
+    padding: 50px 0;
+    align-items: center;
+    max-width: 70%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* tab-content2 */
+
+.tab-content2 {
+    justify-content: center;
+    padding: 50px 0;
+    align-items: center;
+    max-width: 70%;
+    margin: auto;
+    overflow: hidden;
+    display : none;
+}
+
+.tab-content2 .content-1 {
+    display : flex;
+}
+
+.tab-content2 .content-2{
+    display : flex;
+    margin-top: 50px;
+}
+
+.tab-content2 .content-2-list {
+    flex : 1;
+    text-align : center;
+}
+
+.tab-content2 .content-2-list img{
+    width  :200px;
+    height : 140px;
+}
+
+.tab-content2 .content-2-list h4 {
+    margin : 10px;
+}
+
+.tab-content2 .content-2-list p {
+    color : #999999;
+}
+
+/* tab-content3 */
+
+.tab-content3 {
+    justify-content: center;
+    padding: 50px 0;
+    align-items: center;
+    max-width: 70%;
+    margin: auto;
+    overflow: hidden;
+    display : none;
+}
+
+.tab-content3 .content-1 {
+    text-align : center;
+}
+
+.table {
+    width: 100%;
+    margin-top : 50px;
+}
+
+.table tr th {
+    padding : 10px 20px;
+    text-align: center;
+}
+
+.table tr td {
+    padding : 15px 20px;
+    text-align: center;
+    color : #999999;
+    font-weight :600;
+}
+
+.table tbody tr:nth-child(odd) {
+    background: #222;
+}
+
+.content-1 {
+    margin: 0 10px;
+}
+
+.content-2 {
+    margin: 0 10px;
+}
+
+.content-1 p {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+
+.content-1 a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    background: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+
+
+.content-1 a:hover {
+    opacity: 0.8;
+}
+
+
+.content-2 img {
+    width: 330px;
+    height: 235px;
+}
+
+/* film */
+.film-container {
+    background: #000;
+    color: #999999;
+    padding :30px 0;
+}
+
+.film-wrapper {
+    width : 70%;
+    margin: auto;
+}
+
+.film {
+    display: flex;
+    justify-content: space-between;
+}
+
+.film a{
+    position: relative;
+    /* margin: 0 25px; */
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.film img{
+    transition: transform .5s ease;
+}
+
+.film img:hover{
+    transform: scale(1.1);
+}
+
+.film img {
+    border-radius: 5px;
+    width: 175px;
+}
+
+
+
+.film-tilte {
+    width : 70%;
+    margin : auto;
+    margin-bottom: 20px;
+}
+
+.introduce {
+    position: absolute;
+    bottom : 0;
+    background: rgba(0, 0, 0, 0.63)!important;
+    width: 100%;
+    height : auto;
+    line-height: 18px;
+    padding: 8px 10px 4px;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.introduce h2 {
+    font-size: 14px;
+    color: #ffa533!important;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-flex: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.introduce p {
+    font-size: 13px;
+    color : rgb(138, 158, 175);
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-flex: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+/* footer */
+
+.footer {
+    background: #000;
+    color: #999999;
+}
+
+.wrap {
+    max-width: 70%;
+    margin: auto;
+    overflow: hidden;
+    font-size: 18px;
+}
+
+.form-login-content {
+    height: 100%;
+    width: 100%;
+}
+
+.wrap .question {
+    margin: 10px 0 30px 0;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer-info-list {
+    list-style: none;
+}
+
+.footer-info-list li {
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.footer-info-list li:hover {
+    color: #fff;
+}
+
+/* form login */
+
+.form-login {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    display : none;
+}
+
+.form-login.open {
+    display: flex;
+}
+
+.wrapper {
+    margin: auto;
+    font-size: 20px;
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 10%;
+    animation: fadeIn 0.5s ease-in;
+}
+
+.form-login-content {
+    padding: 50px 30px
+}
+
+.form-login-content-1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-login-content-1 img {
+    width: 250px;
+}
+
+
+.form-login-content-2 input {
+    display: block;
+}
+
+.submit {
+    text-align: center;
+    margin: 30px;
+}
+
+.submit a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    background: var(--primary-color);
+    padding: 10px 65px;
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.submit a:hover {
+    opacity: 0.8;
+}
+
+.form-login-register {
+    display: flex;
+    margin: 10px 30px 0 30px;
+}
+
+.form-login-register p {
+    flex: 1;
+}
+
+.form-login-register input {
+    flex: 2;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    margin-left : 10px;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+}
+
+.line span {
+    padding: 18px;
+    font-size: 18px;
+    color: #cccccc;
+    text-transform: uppercase;
+}
+
+.line-left {
+    height: 1px;
+    flex: 1;
+    width: 100%;
+    background-color: #dbdbdb;
+}
+
+.line-right {
+    height: 1px;
+    flex: 1;
+    width: 100%;
+    background-color: #dbdbdb;
+}
+
+.item {
+    text-align: center;
+    cursor: pointer;
+}
+
+.item i {
+    padding: 5px;
+}
+
+@keyframes fadeIn {
+    from {
+        transform: translateY(-60%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes op {
+    from {
+        opacity : 0;
+    }
+    to {
+        opacity : 1;
+    }
+}
+
+.tab-border {
+    display: none;
+}
+
+.show {
+    display: block;
+    animation: op 0.8s ease-in-out;
+}
